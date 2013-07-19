@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C1C1B991-E366-46D1-B74F-4B285A2F27CF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SistemaWebFundacionMedica</RootNamespace>
+    <AssemblyName>SistemaWebFundacionMedica</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultLogin.aspx.cs">
+      <DependentUpon>DefaultLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultLogin.aspx.designer.cs">
+      <DependentUpon>DefaultLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmEspecialidadIng.aspx.cs">
+      <DependentUpon>frmEspecialidadIng.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmEspecialidadIng.aspx.designer.cs">
+      <DependentUpon>frmEspecialidadIng.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.aspx.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmLogin.aspx.designer.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedico.aspx.cs">
+      <DependentUpon>frmMedico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMedico.aspx.designer.cs">
+      <DependentUpon>frmMedico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.Master.cs">
+      <DependentUpon>frmMenuPrincipal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.Master.designer.cs">
+      <DependentUpon>frmMenuPrincipal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaciente.aspx.cs">
+      <DependentUpon>frmPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPaciente.aspx.designer.cs">
+      <DependentUpon>frmPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmWebInicio.aspx.cs">
+      <DependentUpon>frmWebInicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmWebInicio.aspx.designer.cs">
+      <DependentUpon>frmWebInicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\calendar.css" />
+    <Content Include="css\styles.css" />
+    <Content Include="css\StyleSheet.css" />
+    <Content Include="DefaultLogin.aspx" />
+    <Content Include="frmEspecialidadIng.aspx" />
+    <Content Include="frmLogin.aspx" />
+    <Content Include="frmMedico.aspx" />
+    <Content Include="frmMenuPrincipal.Master" />
+    <Content Include="frmPaciente.aspx" />
+    <Content Include="frmWebInicio.aspx" />
+    <Content Include="iconos\128x128\Application.png" />
+    <Content Include="iconos\128x128\Calibration.png" />
+    <Content Include="iconos\128x128\ChronologicalReview.png" />
+    <Content Include="iconos\128x128\DefineControls.png" />
+    <Content Include="iconos\128x128\Maintenance.png" />
+    <Content Include="iconos\128x128\Measurement.png" />
+    <Content Include="iconos\128x128\OnOffSwitch.png" />
+    <Content Include="iconos\128x128\ParameterReview.png" />
+    <Content Include="iconos\128x128\PatientData.png" />
+    <Content Include="iconos\128x128\PatientFile.png" />
+    <Content Include="iconos\128x128\QualityControl.png" />
+    <Content Include="iconos\128x128\RunControl.png" />
+    <Content Include="iconos\128x128\Setup.png" />
+    <Content Include="iconos\128x128\ViewResults.png" />
+    <Content Include="iconos\32x32\AcceptCalibration.png" />
+    <Content Include="iconos\32x32\AcceptQualityControl.png" />
+    <Content Include="iconos\32x32\Archive.png" />
+    <Content Include="iconos\32x32\BandAid.png" />
+    <Content Include="iconos\32x32\Calendar.png" />
+    <Content Include="iconos\32x32\DefinedParameters.png" />
+    <Content Include="iconos\32x32\Delete.png" />
+    <Content Include="iconos\32x32\DoctorFemale.png" />
+    <Content Include="iconos\32x32\DoctorMale.png" />
+    <Content Include="iconos\32x32\DutyRoster.png" />
+    <Content Include="iconos\32x32\Edit.png" />
+    <Content Include="iconos\32x32\Export.png" />
+    <Content Include="iconos\32x32\FirstAidKit.png" />
+    <Content Include="iconos\32x32\History.png" />
+    <Content Include="iconos\32x32\Hospital.png" />
+    <Content Include="iconos\32x32\KidneyDish.png" />
+    <Content Include="iconos\32x32\LastThreeMonths.png" />
+    <Content Include="iconos\32x32\New.png" />
+    <Content Include="iconos\32x32\PatientData.png" />
+    <Content Include="iconos\32x32\PatientFemale.png" />
+    <Content Include="iconos\32x32\PatientFile.png" />
+    <Content Include="iconos\32x32\PatientMale.png" />
+    <Content Include="iconos\32x32\Pills.png" />
+    <Content Include="iconos\32x32\Prescription.png" />
+    <Content Include="iconos\32x32\PrinterSettings.png" />
+    <Content Include="iconos\32x32\Radioactive.png" />
+    <Content Include="iconos\32x32\RejectCalibration.png" />
+    <Content Include="iconos\32x32\RejectQualityControl.png" />
+    <Content Include="iconos\32x32\RerunCalibration.png" />
+    <Content Include="iconos\32x32\RerunQualityControl.png" />
+    <Content Include="iconos\32x32\RunCalibration.png" />
+    <Content Include="iconos\32x32\Save.png" />
+    <Content Include="iconos\32x32\Search.png" />
+    <Content Include="iconos\32x32\Select.png" />
+    <Content Include="iconos\32x32\Skalpell.png" />
+    <Content Include="iconos\32x32\Stethoscope.png" />
+    <Content Include="iconos\32x32\Syringe.png" />
+    <Content Include="iconos\32x32\Task.png" />
+    <Content Include="iconos\32x32\TestTubes.png" />
+    <Content Include="iconos\32x32\Thermometer.png" />
+    <Content Include="iconos\32x32\Tooth.png" />
+    <Content Include="iconos\32x32\UserSetup.png" />
+    <Content Include="iconos\32x32\Vial-O.png" />
+    <Content Include="iconos\32x32\Vial-Pills.png" />
+    <Content Include="iconos\32x32\Vial-X.png" />
+    <Content Include="iconos\32x32\XRay.png" />
+    <Content Include="iconos\bmp\16x16\3d bar chart.bmp" />
+    <Content Include="iconos\bmp\16x16\Abort.bmp" />
+    <Content Include="iconos\bmp\16x16\About.bmp" />
+    <Content Include="iconos\bmp\16x16\Accounting.bmp" />
+    <Content Include="iconos\bmp\16x16\Address book.bmp" />
+    <Content Include="iconos\bmp\16x16\Alarm clock.bmp" />
+    <Content Include="iconos\bmp\16x16\Alarm.bmp" />
+    <Content Include="iconos\bmp\16x16\Alert.bmp" />
+    <Content Include="iconos\bmp\16x16\Alien.bmp" />
+    <Content Include="iconos\bmp\16x16\Anchor.bmp" />
+    <Content Include="iconos\bmp\16x16\Application.bmp" />
+    <Content Include="iconos\bmp\16x16\Apply.bmp" />
+    <Content Include="iconos\bmp\16x16\Back.bmp" />
+    <Content Include="iconos\bmp\16x16\Bad mark.bmp" />
+    <Content Include="iconos\bmp\16x16\Bee.bmp" />
+    <Content Include="iconos\bmp\16x16\Black bookmark.bmp" />
+    <Content Include="iconos\bmp\16x16\Black pin.bmp" />
+    <Content Include="iconos\bmp\16x16\Black tag.bmp" />
+    <Content Include="iconos\bmp\16x16\Blog.bmp" />
+    <Content Include="iconos\bmp\16x16\Blue bookmark.bmp" />
+    <Content Include="iconos\bmp\16x16\Blue key.bmp" />
+    <Content Include="iconos\bmp\16x16\Blue pin.bmp" />
+    <Content Include="iconos\bmp\16x16\Blue tag.bmp" />
+    <Content Include="iconos\bmp\16x16\Bomb.bmp" />
+    <Content Include="iconos\bmp\16x16\Bookmark.bmp" />
+    <Content Include="iconos\bmp\16x16\Boss.bmp" />
+    <Content Include="iconos\bmp\16x16\Bottom.bmp" />
+    <Content Include="iconos\bmp\16x16\Briefcase.bmp" />
+    <Content Include="iconos\bmp\16x16\Brush.bmp" />
+    <Content Include="iconos\bmp\16x16\Bubble.bmp" />
+    <Content Include="iconos\bmp\16x16\Buy.bmp" />
+    <Content Include="iconos\bmp\16x16\Calculator.bmp" />
+    <Content Include="iconos\bmp\16x16\Calendar.bmp" />
+    <Content Include="iconos\bmp\16x16\Cancel.bmp" />
+    <Content Include="iconos\bmp\16x16\Car key.bmp" />
+    <Content Include="iconos\bmp\16x16\CD.bmp" />
+    <Content Include="iconos\bmp\16x16\Clipboard.bmp" />
+    <Content Include="iconos\bmp\16x16\Clock.bmp" />
+    <Content Include="iconos\bmp\16x16\Comment.bmp" />
+    <Content Include="iconos\bmp\16x16\Company.bmp" />
+    <Content Include="iconos\bmp\16x16\Compass.bmp" />
+    <Content Include="iconos\bmp\16x16\Component.bmp" />
+    <Content Include="iconos\bmp\16x16\Computer 16x16.bmp" />
+    <Content Include="iconos\bmp\16x16\Copy.bmp" />
+    <Content Include="iconos\bmp\16x16\Create.bmp" />
+    <Content Include="iconos\bmp\16x16\Cut.bmp" />
+    <Content Include="iconos\bmp\16x16\Danger.bmp" />
+    <Content Include="iconos\bmp\16x16\Database.bmp" />
+    <Content Include="iconos\bmp\16x16\Delete.bmp" />
+    <Content Include="iconos\bmp\16x16\Delivery.bmp" />
+    <Content Include="iconos\bmp\16x16\Diagram.bmp" />
+    <Content Include="iconos\bmp\16x16\Dial.bmp" />
+    <Content Include="iconos\bmp\16x16\Disaster.bmp" />
+    <Content Include="iconos\bmp\16x16\Display 16x16.bmp" />
+    <Content Include="iconos\bmp\16x16\Dollar.bmp" />
+    <Content Include="iconos\bmp\16x16\Down.bmp" />
+    <Content Include="iconos\bmp\16x16\Download.bmp" />
+    <Content Include="iconos\bmp\16x16\Downloads folder.bmp" />
+    <Content Include="iconos\bmp\16x16\E-mail.bmp" />
+    <Content Include="iconos\bmp\16x16\Earth.bmp" />
+    <Content Include="iconos\bmp\16x16\Eject.bmp" />
+    <Content Include="iconos\bmp\16x16\Equipment.bmp" />
+    <Content Include="iconos\bmp\16x16\Erase.bmp" />
+    <Content Include="iconos\bmp\16x16\Error.bmp" />
+    <Content Include="iconos\bmp\16x16\Euro.bmp" />
+    <Content Include="iconos\bmp\16x16\Exit.bmp" />
+    <Content Include="iconos\bmp\16x16\Expand.bmp" />
+    <Content Include="iconos\bmp\16x16\Eye.bmp" />
+    <Content Include="iconos\bmp\16x16\Fall.bmp" />
+    <Content Include="iconos\bmp\16x16\Fast-forward.bmp" />
+    <Content Include="iconos\bmp\16x16\Favourites.bmp" />
+    <Content Include="iconos\bmp\16x16\Female symbol.bmp" />
+    <Content Include="iconos\bmp\16x16\Female.bmp" />
+    <Content Include="iconos\bmp\16x16\Film.bmp" />
+    <Content Include="iconos\bmp\16x16\Filter.bmp" />
+    <Content Include="iconos\bmp\16x16\Find.bmp" />
+    <Content Include="iconos\bmp\16x16\First record.bmp" />
+    <Content Include="iconos\bmp\16x16\First.bmp" />
+    <Content Include="iconos\bmp\16x16\Flag.bmp" />
+    <Content Include="iconos\bmp\16x16\Flash drive.bmp" />
+    <Content Include="iconos\bmp\16x16\Folder.bmp" />
+    <Content Include="iconos\bmp\16x16\Forbidden.bmp" />
+    <Content Include="iconos\bmp\16x16\Forward.bmp" />
+    <Content Include="iconos\bmp\16x16\Free bsd.bmp" />
+    <Content Include="iconos\bmp\16x16\Gift.bmp" />
+    <Content Include="iconos\bmp\16x16\Globe.bmp" />
+    <Content Include="iconos\bmp\16x16\Go back.bmp" />
+    <Content Include="iconos\bmp\16x16\Go forward.bmp" />
+    <Content Include="iconos\bmp\16x16\Go.bmp" />
+    <Content Include="iconos\bmp\16x16\Good mark.bmp" />
+    <Content Include="iconos\bmp\16x16\Green bookmark.bmp" />
+    <Content Include="iconos\bmp\16x16\Green pin.bmp" />
+    <Content Include="iconos\bmp\16x16\Green tag.bmp" />
+    <Content Include="iconos\bmp\16x16\Hard disk.bmp" />
+    <Content Include="iconos\bmp\16x16\Heart.bmp" />
+    <Content Include="iconos\bmp\16x16\Help book 3d.bmp" />
+    <Content Include="iconos\bmp\16x16\Help book.bmp" />
+    <Content Include="iconos\bmp\16x16\Help symbol.bmp" />
+    <Content Include="iconos\bmp\16x16\Help.bmp" />
+    <Content Include="iconos\bmp\16x16\Hint.bmp" />
+    <Content Include="iconos\bmp\16x16\History.bmp" />
+    <Content Include="iconos\bmp\16x16\Home.bmp" />
+    <Content Include="iconos\bmp\16x16\Hourglass.bmp" />
+    <Content Include="iconos\bmp\16x16\How-to.bmp" />
+    <Content Include="iconos\bmp\16x16\Hungup.bmp" />
+    <Content Include="iconos\bmp\16x16\In-yang.bmp" />
+    <Content Include="iconos\bmp\16x16\Info.bmp" />
+    <Content Include="iconos\bmp\16x16\Iphone.bmp" />
+    <Content Include="iconos\bmp\16x16\Key.bmp" />
+    <Content Include="iconos\bmp\16x16\Last recor.bmp" />
+    <Content Include="iconos\bmp\16x16\Last.bmp" />
+    <Content Include="iconos\bmp\16x16\Left-right.bmp" />
+    <Content Include="iconos\bmp\16x16\Lightning.bmp" />
+    <Content Include="iconos\bmp\16x16\Liner.bmp" />
+    <Content Include="iconos\bmp\16x16\Linux.bmp" />
+    <Content Include="iconos\bmp\16x16\List.bmp" />
+    <Content Include="iconos\bmp\16x16\Load.bmp" />
+    <Content Include="iconos\bmp\16x16\Lock.bmp" />
+    <Content Include="iconos\bmp\16x16\Low rating.bmp" />
+    <Content Include="iconos\bmp\16x16\Magic wand.bmp" />
+    <Content Include="iconos\bmp\16x16\Mail.bmp" />
+    <Content Include="iconos\bmp\16x16\Male symbol.bmp" />
+    <Content Include="iconos\bmp\16x16\Male.bmp" />
+    <Content Include="iconos\bmp\16x16\Medium rating.bmp" />
+    <Content Include="iconos\bmp\16x16\Message.bmp" />
+    <Content Include="iconos\bmp\16x16\Mobile-phone.bmp" />
+    <Content Include="iconos\bmp\16x16\Modify.bmp" />
+    <Content Include="iconos\bmp\16x16\Move.bmp" />
+    <Content Include="iconos\bmp\16x16\Movie.bmp" />
+    <Content Include="iconos\bmp\16x16\Music.bmp" />
+    <Content Include="iconos\bmp\16x16\Mute.bmp" />
+    <Content Include="iconos\bmp\16x16\Network connection.bmp" />
+    <Content Include="iconos\bmp\16x16\New document.bmp" />
+    <Content Include="iconos\bmp\16x16\New.bmp" />
+    <Content Include="iconos\bmp\16x16\Next track.bmp" />
+    <Content Include="iconos\bmp\16x16\Next.bmp" />
+    <Content Include="iconos\bmp\16x16\No-entry.bmp" />
+    <Content Include="iconos\bmp\16x16\No.bmp" />
+    <Content Include="iconos\bmp\16x16\Notes.bmp" />
+    <Content Include="iconos\bmp\16x16\OK.bmp" />
+    <Content Include="iconos\bmp\16x16\Paste.bmp" />
+    <Content Include="iconos\bmp\16x16\Pause.bmp" />
+    <Content Include="iconos\bmp\16x16\People.bmp" />
+    <Content Include="iconos\bmp\16x16\Percent.bmp" />
+    <Content Include="iconos\bmp\16x16\Person.bmp" />
+    <Content Include="iconos\bmp\16x16\Phone number.bmp" />
+    <Content Include="iconos\bmp\16x16\Phone.bmp" />
+    <Content Include="iconos\bmp\16x16\Pie chart.bmp" />
+    <Content Include="iconos\bmp\16x16\Pinion.bmp" />
+    <Content Include="iconos\bmp\16x16\Play-music.bmp" />
+    <Content Include="iconos\bmp\16x16\Play.bmp" />
+    <Content Include="iconos\bmp\16x16\Playback.bmp" />
+    <Content Include="iconos\bmp\16x16\Previous record.bmp" />
+    <Content Include="iconos\bmp\16x16\Previous.bmp" />
+    <Content Include="iconos\bmp\16x16\Print.bmp" />
+    <Content Include="iconos\bmp\16x16\Problem.bmp" />
+    <Content Include="iconos\bmp\16x16\Question.bmp" />
+    <Content Include="iconos\bmp\16x16\Radiation.bmp" />
+    <Content Include="iconos\bmp\16x16\Raise.bmp" />
+    <Content Include="iconos\bmp\16x16\Record.bmp" />
+    <Content Include="iconos\bmp\16x16\Red bookmark.bmp" />
+    <Content Include="iconos\bmp\16x16\Red mark.bmp" />
+    <Content Include="iconos\bmp\16x16\Red pin.bmp" />
+    <Content Include="iconos\bmp\16x16\Red star.bmp" />
+    <Content Include="iconos\bmp\16x16\Red tag.bmp" />
+    <Content Include="iconos\bmp\16x16\Redo.bmp" />
+    <Content Include="iconos\bmp\16x16\Refresh.bmp" />
+    <Content Include="iconos\bmp\16x16\Remove.bmp" />
+    <Content Include="iconos\bmp\16x16\Repair.bmp" />
+    <Content Include="iconos\bmp\16x16\Report.bmp" />
+    <Content Include="iconos\bmp\16x16\Retort.bmp" />
+    <Content Include="iconos\bmp\16x16\Rewind.bmp" />
+    <Content Include="iconos\bmp\16x16\Sad.bmp" />
+    <Content Include="iconos\bmp\16x16\Save.bmp" />
+    <Content Include="iconos\bmp\16x16\Schedule.bmp" />
+    <Content Include="iconos\bmp\16x16\Script.bmp" />
+    <Content Include="iconos\bmp\16x16\Search.bmp" />
+    <Content Include="iconos\bmp\16x16\Shield 16x16.bmp" />
+    <Content Include="iconos\bmp\16x16\Shopping cart.bmp" />
+    <Content Include="iconos\bmp\16x16\Silence.bmp" />
+    <Content Include="iconos\bmp\16x16\Smile.bmp" />
+    <Content Include="iconos\bmp\16x16\Sound.bmp" />
+    <Content Include="iconos\bmp\16x16\Stop sign.bmp" />
+    <Content Include="iconos\bmp\16x16\Stop.bmp" />
+    <Content Include="iconos\bmp\16x16\Stopwatch.bmp" />
+    <Content Include="iconos\bmp\16x16\Sum.bmp" />
+    <Content Include="iconos\bmp\16x16\Sync.bmp" />
+    <Content Include="iconos\bmp\16x16\Table.bmp" />
+    <Content Include="iconos\bmp\16x16\Target.bmp" />
+    <Content Include="iconos\bmp\16x16\Taxi.bmp" />
+    <Content Include="iconos\bmp\16x16\Terminate.bmp" />
+    <Content Include="iconos\bmp\16x16\Text preview.bmp" />
+    <Content Include="iconos\bmp\16x16\Text.bmp" />
+    <Content Include="iconos\bmp\16x16\Thumbs down.bmp" />
+    <Content Include="iconos\bmp\16x16\Thumbs up.bmp" />
+    <Content Include="iconos\bmp\16x16\Toolbox.bmp" />
+    <Content Include="iconos\bmp\16x16\Top.bmp" />
+    <Content Include="iconos\bmp\16x16\Trackback.bmp" />
+    <Content Include="iconos\bmp\16x16\Trash.bmp" />
+    <Content Include="iconos\bmp\16x16\Tune.bmp" />
+    <Content Include="iconos\bmp\16x16\Turn off.bmp" />
+    <Content Include="iconos\bmp\16x16\Twitter.bmp" />
+    <Content Include="iconos\bmp\16x16\Undo.bmp" />
+    <Content Include="iconos\bmp\16x16\Unlock.bmp" />
+    <Content Include="iconos\bmp\16x16\Up-down.bmp" />
+    <Content Include="iconos\bmp\16x16\Up.bmp" />
+    <Content Include="iconos\bmp\16x16\Update.bmp" />
+    <Content Include="iconos\bmp\16x16\Upload.bmp" />
+    <Content Include="iconos\bmp\16x16\User group.bmp" />
+    <Content Include="iconos\bmp\16x16\View.bmp" />
+    <Content Include="iconos\bmp\16x16\Volume.bmp" />
+    <Content Include="iconos\bmp\16x16\Wallet.bmp" />
+    <Content Include="iconos\bmp\16x16\Warning.bmp" />
+    <Content Include="iconos\bmp\16x16\Wrench.bmp" />
+    <Content Include="iconos\bmp\16x16\Yellow bookmark.bmp" />
+    <Content Include="iconos\bmp\16x16\Yellow pin.bmp" />
+    <Content Include="iconos\bmp\16x16\Yellow tag.bmp" />
+    <Content Include="iconos\bmp\16x16\Yes.bmp" />
+    <Content Include="iconos\bmp\16x16\Zoom.bmp" />
+    <Content Include="iconos\PNGs\add_16.png" />
+    <Content Include="iconos\PNGs\add_24.png" />
+    <Content Include="iconos\PNGs\add_32.png" />
+    <Content Include="iconos\PNGs\applications_16.png" />
+    <Content Include="iconos\PNGs\applications_24.png" />
+    <Content Include="iconos\PNGs\applications_32.png" />
+    <Content Include="iconos\PNGs\arrow-back_16.png" />
+    <Content Include="iconos\PNGs\arrow-back_24.png" />
+    <Content Include="iconos\PNGs\arrow-back_32.png" />
+    <Content Include="iconos\PNGs\arrow-down_16.png" />
+    <Content Include="iconos\PNGs\arrow-down_24.png" />
+    <Content Include="iconos\PNGs\arrow-down_32.png" />
+    <Content Include="iconos\PNGs\arrow-forward_16.png" />
+    <Content Include="iconos\PNGs\arrow-forward_24.png" />
+    <Content Include="iconos\PNGs\arrow-forward_32.png" />
+    <Content Include="iconos\PNGs\arrow-up_16.png" />
+    <Content Include="iconos\PNGs\arrow-up_24.png" />
+    <Content Include="iconos\PNGs\arrow-up_32.png" />
+    <Content Include="iconos\PNGs\computer_16.png" />
+    <Content Include="iconos\PNGs\computer_24.png" />
+    <Content Include="iconos\PNGs\computer_32.png" />
+    <Content Include="iconos\PNGs\copy_16.png" />
+    <Content Include="iconos\PNGs\copy_24.png" />
+    <Content Include="iconos\PNGs\copy_32.png" />
+    <Content Include="iconos\PNGs\cut_16.png" />
+    <Content Include="iconos\PNGs\cut_24.png" />
+    <Content Include="iconos\PNGs\cut_32.png" />
+    <Content Include="iconos\PNGs\delete_16.png" />
+    <Content Include="iconos\PNGs\delete_24.png" />
+    <Content Include="iconos\PNGs\delete_32.png" />
+    <Content Include="iconos\PNGs\disc-media_16.png" />
+    <Content Include="iconos\PNGs\disc-media_24.png" />
+    <Content Include="iconos\PNGs\disc-media_32.png" />
+    <Content Include="iconos\PNGs\documents_16.png" />
+    <Content Include="iconos\PNGs\documents_24.png" />
+    <Content Include="iconos\PNGs\documents_32.png" />
+    <Content Include="iconos\PNGs\folder-closed_16.png" />
+    <Content Include="iconos\PNGs\folder-closed_24.png" />
+    <Content Include="iconos\PNGs\folder-closed_32.png" />
+    <Content Include="iconos\PNGs\folder-open_16.png" />
+    <Content Include="iconos\PNGs\folder-open_24.png" />
+    <Content Include="iconos\PNGs\folder-open_32.png" />
+    <Content Include="iconos\PNGs\home_16.png" />
+    <Content Include="iconos\PNGs\home_24.png" />
+    <Content Include="iconos\PNGs\home_32.png" />
+    <Content Include="iconos\PNGs\mail_16.png" />
+    <Content Include="iconos\PNGs\mail_24.png" />
+    <Content Include="iconos\PNGs\mail_32.png" />
+    <Content Include="iconos\PNGs\paste_16.png" />
+    <Content Include="iconos\PNGs\paste_24.png" />
+    <Content Include="iconos\PNGs\paste_32.png" />
+    <Content Include="iconos\PNGs\print_16.png" />
+    <Content Include="iconos\PNGs\print_24.png" />
+    <Content Include="iconos\PNGs\print_32.png" />
+    <Content Include="iconos\PNGs\redo_16.png" />
+    <Content Include="iconos\PNGs\redo_24.png" />
+    <Content Include="iconos\PNGs\redo_32.png" />
+    <Content Include="iconos\PNGs\save_16.png" />
+    <Content Include="iconos\PNGs\save_24.png" />
+    <Content Include="iconos\PNGs\save_32.png" />
+    <Content Include="iconos\PNGs\trash_16.png" />
+    <Content Include="iconos\PNGs\trash_24.png" />
+    <Content Include="iconos\PNGs\trash_32.png" />
+    <Content Include="iconos\PNGs\undo_16.png" />
+    <Content Include="iconos\PNGs\undo_24.png" />
+    <Content Include="iconos\PNGs\undo_32.png" />
+    <Content Include="iconos\verde\computer_16.png" />
+    <Content Include="iconos\verde\computer_24.png" />
+    <Content Include="iconos\verde\computer_32.png" />
+    <Content Include="iconos\verde\documents_16.png" />
+    <Content Include="iconos\verde\documents_24.png" />
+    <Content Include="iconos\verde\documents_32.png" />
+    <Content Include="iconos\verde\home_16.png" />
+    <Content Include="iconos\verde\home_24.png" />
+    <Content Include="iconos\verde\home_32.png" />
+    <Content Include="iconos\verde\mail_16.png" />
+    <Content Include="iconos\verde\mail_24.png" />
+    <Content Include="iconos\verde\mail_32.png" />
+    <Content Include="iconos\verde\print_16.png" />
+    <Content Include="iconos\verde\print_24.png" />
+    <Content Include="iconos\verde\print_32.png" />
+    <Content Include="images\bg_boton.gif" />
+    <Content Include="images\bg_cabeza_tabla.gif" />
+    <Content Include="images\bg_main.gif" />
+    <Content Include="images\bg_touch.gif" />
+    <Content Include="images\calendario.gif" />
+    <Content Include="images\Calendar_scheduleHS.png" />
+    <Content Include="images\editar.gif" />
+    <Content Include="images\imagen2.png" />
+    <Content Include="images\logo-oms.jpg" />
+    <Content Include="images\medicina.jpg" />
+    <Content Include="images\medicina1.jpg" />
+    <Content Include="images\sub_h2.gif" />
+    <Content Include="js\calendar.js" />
+    <Content Include="js\calendar\.xvpics\calendar_icon.png" />
+    <Content Include="js\calendar\.xvpics\ff_take.png" />
+    <Content Include="js\calendar\.xvpics\paypal-donate.png" />
+    <Content Include="js\calendar\bug-tester.html" />
+    <Content Include="js\calendar\calendar_icon.png" />
+    <Content Include="js\calendar\calendar_icon_big.png" />
+    <Content Include="js\calendar\content.css" />
+    <Content Include="js\calendar\crazy-calendar.html" />
+    <Content Include="js\calendar\datepickercontrol.css" />
+    <Content Include="js\calendar\datepickercontrol.js" />
+    <Content Include="js\calendar\datepickercontrol_bluegray.css" />
+    <Content Include="js\calendar\datepickercontrol_darkred.css" />
+    <Content Include="js\calendar\datepickercontrol_lnx.css" />
+    <Content Include="js\calendar\datepickercontrol_mozilla.css" />
+    <Content Include="js\calendar\ff_take.png" />
+    <Content Include="js\calendar\first-day-example.html" />
+    <Content Include="js\calendar\i18n_bulgarian.txt" />
+    <Content Include="js\calendar\i18n_turkish.txt" />
+    <Content Include="js\calendar\index-es.html" />
+    <Content Include="js\calendar\index.html" />
+    <Content Include="js\calendar\minmaxtest.html" />
+    <Content Include="js\calendar\mozilla-theme.html" />
+    <Content Include="js\calendar\paypal-donate.png" />
+    <Content Include="js\calendar\thanks.html" />
+    <Content Include="js\codigoEspecialidad.js" />
+    <Content Include="js\codigo_js.js" />
+    <Content Include="js\mootools.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="css\css.css.bak" />
+    <None Include="css\styles.css.bak" />
+    <None Include="iconos\verde\Thumbs.db" />
+    <None Include="js\calendar\.directory" />
+    <None Include="js\calendar\README" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
+      <Project>{2645D406-2B77-4E84-8996-EE055C1912EA}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaLogicaNegocios\CapaLogicaNegocios.csproj">
+      <Project>{54F45F9A-9F34-4FD9-8793-9E2611281CD0}</Project>
+      <Name>CapaLogicaNegocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57945</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

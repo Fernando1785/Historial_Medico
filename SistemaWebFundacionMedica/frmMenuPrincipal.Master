@@ -1,0 +1,121 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="frmMenuPrincipal.master.cs" Inherits="SistemaWebFundacionMedica.frmMenuPrincipal" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Sistema Fundacion Medica</title>
+       <script src="./js/codigo_js.js" type="text/javascript"></script>
+      <script src="./js/codigoEspecialidad.js" type="text/javascript"></script>
+  <%--   <script language="Javascript" src="js/mootools.js" type="text/javascript"></script>--%>
+   
+    <%--con las siguientes 3 lineas llamo al archivo js para llamar al calendario
+    y como estoy en el master page funciona con todos los formularios hijos 
+    <script type="text/javascript" src="js/calendar/datepickercontrol.js"></script>
+    <link type="text/css" rel="stylesheet" href="js/calendar/datepickercontrol_darkred.css"/>
+    <link type="text/css" rel="stylesheet" href="js/calendar/content.css"/>--%>
+   
+   <%--la siguiente linea se conecta con el archivo styles.css para llamar a los estilos que son los colores y formas--%>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    
+  </head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table width="800px" border="1" align="center" cellpadding="0" cellspacing="0">
+        
+            <tr>
+                <td colspan="2">
+                   <table>
+                   <tr>
+                   <td>
+                        
+                       <img src="images/medicina1.jpg" style="width: 791px; height: 148px" /></td>
+                   </tr>
+                   </table> 
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"  height="20px">
+                 <table align="left" style="width: 569px">
+                   <tr>
+                   <td>
+                       <asp:Menu ID="Menu2" runat="server" BackColor="#E3EAEB" 
+                           DynamicHorizontalOffset="2" Font-Names="Arial" Font-Size="10" 
+                           ForeColor="#003300" Orientation="Horizontal" StaticSubMenuIndent="10px" 
+                           BorderStyle="Double" Width="611px">
+                           <StaticSelectedStyle BackColor="#1C5E55" />
+                           <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                           <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+                           <DynamicMenuStyle BackColor="#E3EAEB" />
+                           <DynamicSelectedStyle BackColor="#1C5E55" />
+                           <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                           <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+                           <Items>
+                               <asp:MenuItem Text="Inicio" Value="Inicio" ImageUrl="~/iconos/PNGs/home_32.png"></asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/frmPaciente.aspx" Text="Paciente" Value="Paciente" 
+                                   ImageUrl="~/iconos/32x32/PatientFemale.png">
+                               </asp:MenuItem>
+                               <asp:MenuItem Text="Medico" Value="Medico" NavigateUrl="~/frmMedico.aspx" 
+                                   ImageUrl="~/iconos/32x32/DoctorMale.png"></asp:MenuItem>
+                               <asp:MenuItem Text="Especialidad" Value="Especialidad" 
+                                   NavigateUrl="~/frmEspecialidadIng.aspx"></asp:MenuItem>
+                               <asp:MenuItem Text="Historia CLinica" Value="Historia CLinica" 
+                                   ImageUrl="~/iconos/32x32/PatientFile.png"></asp:MenuItem>
+                           </Items>
+                       </asp:Menu>
+                       </td> 
+                   </tr>
+                   </table>
+                </td>
+            </tr>
+            <tr><td width ="15%">
+                <asp:TreeView ID="TreeView1" runat="server" ImageSet="BulletedList" 
+                    onselectednodechanged="TreeView1_SelectedNodeChanged" 
+                    ShowExpandCollapse="False">
+                    <ParentNodeStyle Font-Bold="False" />
+                    <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                    <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" 
+                        HorizontalPadding="0px" VerticalPadding="0px" />
+                    <Nodes>
+                        <asp:TreeNode Text="Quienes somos?" Value="Quienes somos?">
+                            <asp:TreeNode Text="Informacion" Value="Informacion"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Contactenos" Value="Contactenos"></asp:TreeNode>
+                    </Nodes>
+                    <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" 
+                        HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" />
+                </asp:TreeView>
+                </td>
+            
+          
+               <td width="85%" valign="top">
+               
+              <%--   <table>
+                <tr>
+                <td >
+              
+              
+                </td>
+                </tr>
+                
+                </table>--%>
+                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    
+                    
+                    
+                    </asp:ContentPlaceHolder>
+                </td>
+           
+                
+            </tr>
+            <tr>
+                <td colspan="2">pie de pagina</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+    <p>
+        &nbsp;</p>
+</body>
+</html>

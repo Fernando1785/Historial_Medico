@@ -1,0 +1,116 @@
+﻿body {
+}
+
+        *
+        {
+          font-family: Calibri;
+        }
+     
+      h1
+      {
+        font-size: 25px;
+      }
+      
+      h2
+      {
+        font-size: 20px;
+      
+      }
+        h3
+      {
+        font-size: 15px;
+      }
+      
+         h4
+      {
+        font-size: 12px;
+      }
+       p
+      {     
+        font-style: italic;
+      }
+     
+      .RightAligned
+      {
+        text-align: right;
+      }
+      
+      .LeftAligned
+      {
+        text-align: left;
+      }
+      
+       .C_CELESTE
+      {
+        color: #0078AE;
+      }
+        .C_AZUL
+      {
+        color: #002E56;
+      }
+        .C_GRIS
+      {
+        color: #929496;
+      }
+       
+       .C_ROJO
+    {
+        color: #FF0000;
+     }
+
+
+        .tamano1
+       {
+            font-size: 20px;
+            font-style: italic;
+            font-weight: bold;
+        }
+         .tamano2
+       {
+           font-size: 20px 
+        }
+         .tamano3
+       {
+           font-size: 15px 
+        }
+         .tamano4
+       {
+           font-size: 12px 
+        }
+         .tamano5
+       {
+           font-size: 10px 
+        }
+          .tamano45
+       {
+           font-size: 11px 
+        }
+        
+.MyCalendar .ajax__calendar_container {
+    border:1px solid #0078ae;
+    background-color: WHITE;
+    color: #0078AE;
+}
+.MyCalendar .ajax__calendar_other .ajax__calendar_day,
+.MyCalendar .ajax__calendar_other .ajax__calendar_year {
+    color: black;
+}
+.MyCalendar .ajax__calendar_hover .ajax__calendar_day,
+.MyCalendar .ajax__calendar_hover .ajax__calendar_month,
+.MyCalendar .ajax__calendar_hover .ajax__calendar_year {
+    color: black;
+}
+.MyCalendar .ajax__calendar_active .ajax__calendar_day,
+.MyCalendar .ajax__calendar_active .ajax__calendar_month,
+.MyCalendar .ajax__calendar_active .ajax__calendar_year {
+    color: #002E56;
+    font-weight:bold;
+}
+.MyCalendar .ajax__calendar_header .ajax__calendar_prev,
+.MyCalendar .ajax__calendar_header .ajax__calendar_title,
+.MyCalendar .ajax__calendar_header .ajax__calendar_next
+{
+	color:#002e56
+	}
+	
+	
